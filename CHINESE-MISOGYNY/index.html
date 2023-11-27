@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts.js"></script>
+	<title> 
+        MISOGYNY IN CHINESE CHARACTER
+	</title> 
+    <div class="wrapper"></div>
+    <h1 class="title">女</h1>
+    <div id="box"></div>
+</head> 
+
+<body> 
+    <div class = "font1">奴</div>
+    <div class = "font2">妒</div>
+    <div class = "font3">妖</div>
+    <div class = "font4">嫌</div>
+    <div class = "font5">婊</div>
+
+    <div id="height"> <span></span></div> 
+    <div id="width"> <span></span></div> 
+
+
+ 
+        
+    <script>
+        const height = document.querySelector("#height span"); 
+        const width = document.querySelector("#width span"); 
+          
+        // Insert values on load of page 
+        window.onload = function() { 
+            height.innerHTML = window.innerHeight; 
+            width.innerHTML = window.innerWidth; 
+        }; 
+          
+        // Change values when window is resized 
+        window.onresize = function() { 
+          
+            // Setting the current height & width 
+            // to the elements 
+            height.innerHTML = window.innerHeight; 
+            width.innerHTML = window.innerWidth; 
+        };    
+         		boxElem = document.querySelector('#box') 
+
+		let resizeObserver = new ResizeObserver((entries) => { 
+			for (entry of entries) { 
+
+				// get the height and width of the element 
+				console.log('Height: ', entry.contentRect.height); 
+				console.log('Width:', entry.contentRect.width); 
+			} 
+		}); 
+    </script>
+    <script>
+
+		// observe the given element for changes 
+		resizeObserver.observe(boxElem); 
+
+        boxElem = document.querySelector('#box') 
+
+    let resizeObserver = new ResizeObserver((entries) => { 
+    for (entry of entries) { 
+
+        // get the height and width of the element 
+        console.log('Height:', entry.contentRect.height); 
+        console.log('Width:', entry.contentRect.width); 
+    } 
+   }); 
+
+        // observe the given element for changes 
+    resizeObserver.observe(boxElem); 
+    </script>
+     <script>
+        function handleResize() {
+            // Check if the screen width is 800px
+            if (window.innerWidth === 1200) {
+                // Trigger the print function
+                window.print();
+            }
+        }
+
+        // Attach the handleResize function to the resize event
+        window.addEventListener('resize', handleResize);
+
+        // Initial check on page load
+        handleResize();
+    </script>
+</body> 
+</html>
