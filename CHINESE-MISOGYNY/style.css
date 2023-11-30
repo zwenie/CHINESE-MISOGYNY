@@ -28,15 +28,7 @@ body {
     margin: 0;
     }
 
-
-.font1 {
-    font-size: 15em;
-    line-height: 2;
-    color:red;
-    margin: 0;
-    overflow: hidden;
-}
-.button{
+ .button{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,6 +37,25 @@ body {
     background-color: #a20000; 
     padding: 20px;
     border-radius: 10px;
+
+}    
+
+.font1 {
+    font-size: 15em;
+    line-height: 2;
+    color:red;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+.overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: #fff;
 
 }
 
@@ -55,12 +66,33 @@ body {
     margin: 0;
     overflow: hidden;
 }
+
+.overlay2 {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: #fff;
+
+}
+
 .font3 {
     font-size: 25em;
     line-height: 2;
     color:red;
     margin: 0;
     overflow: hidden;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: #fff;
+
 }
 
 .font4 {
@@ -70,12 +102,33 @@ body {
     margin: 0;
     overflow: hidden;
 }
+
+.overlay4 {
+    position: absolute;
+    top: 65%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: #fff;
+
+}
+
 .font5 {
     font-size: 35em;
     line-height: 2;
     color:red;
     margin: 0;
     overflow: hidden;
+}
+
+.overlay5 {
+    position: absolute;
+    top: 72%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    color: #fff;
+
 }
 
 #height{
@@ -120,10 +173,17 @@ body {
     .font1 {
         font-size: 0;
 }
+.overlay1 {
+      font-size: 0;
+}
 }
 
 @media screen and (min-width:900px)and (max-width: 2000px) {
     .font1 {
+        font-size: 0;
+        
+}
+    .overlay1 {
         font-size: 0;
 }
 }
@@ -132,9 +192,15 @@ body {
     .font2 {
         font-size: 0;
 }
+     .overlay2 {
+        font-size: 0;
+}
 }
 @media screen and (min-width:1000px)and (max-width: 2000px) {
     .font2 {
+        font-size: 0;
+}
+    .overlay2 {
         font-size: 0;
 }
 }
@@ -143,14 +209,25 @@ body {
     .font3 {
         font-size: 0;
 }
+    .overlay3 {
+        font-size: 0;
 }
+}
+
 @media screen and (min-width:1200px)and (max-width: 2000px) {
     .font3 {
         font-size: 0;
 }
+    .overlay3 {
+        font-size: 0;
 }
+}
+
 @media screen and (min-width:0px)and (max-width: 1200px) {
     .font4 {
+        font-size: 0;
+}
+    .overlay4 {
         font-size: 0;
 }
 }
@@ -158,9 +235,15 @@ body {
     .font4 {
         font-size: 0;
 }
+    .overlay4 {
+        font-size: 0;
+}
 }
 @media screen and (min-width:0px)and (max-width: 1600px) {
     .font5 {
+        font-size: 0;
+}
+    .overlay5 {
         font-size: 0;
 }
 }
