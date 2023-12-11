@@ -9,9 +9,7 @@
         MISOGYNY IN CHINESE CHARACTERS
 	</title> 
     <div class="wrapper"></div>
-    <h1 class="title"><svg width="183" height="189" viewBox="0 0 183 189" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.57628e-07 45.4H182.6V69.8H3.57628e-07V45.4ZM71.6 0.199993L97.8 4.79999C82 48 60 101.6 43.8 136.2L19.4 127.4C35.4 94.8 57.4 41.2 71.6 0.199993ZM127.6 57.4L154 63.4C138 146.6 101 175.6 14.4 188.4C12 181 6.6 170.8 1.8 164.6C82 155.4 114.4 131.2 127.6 57.4ZM32.6 123.4L48.8 104.6C91.4 118.8 149.8 145 179.2 166.4L160.8 189C134 167.4 77.2 139.4 32.6 123.4Z" fill="#FF0000"/>
-        </svg></h1>
+    <h1 class="title"><img src="nv1.svg"></h1>
  
 </head> 
 
@@ -51,6 +49,50 @@
         <img src="womenbody.png" alt="Horizontal Image">
     </div>
 
+    <div class="full-screen-layout">
+        <header>
+            <div class="left-header"></div>
+            <div class="right-header">
+                <div class="text-row">
+                    <h1>MISOGYNY IN CHINESE CHARACTERS</h1>
+                </div>
+                <div class="text-row">
+                    <p>Many characters containing the radical <span class="colored-word">"女" (woman)</span> are believed to carry derogatory, negative, and repulsive connotations. Through this exhibition, viewers can examine the issues of misogyny and gender bias in Chinese society using an online visual Chinese character dictionary.</p>
+                </div>
+            </div>
+        </header>
+    
+        <section id="about">
+            <div class="left-grid">
+                <div class="box" onclick="showImage('nv1.png')">奴</div>
+                <div class="box" onclick="showImage('nv2.png')">奸</div>
+                <div class="box" onclick="showImage('nv3.png')">妒</div>
+                <div class="box" onclick="showImage('nv4.png')">姘</div>
+                <div class="box" onclick="showImage('nv13.png')">妄</div>
+                <div class="box" onclick="showImage('nv5.png')">妖</div>
+                <div class="box" onclick="showImage('nv6.png')">妓</div>
+                <div class="box" onclick="showImage('nv7.png')">妨</div>
+                <div class="box" onclick="showImage('nv8.png')">娼</div>
+                <div class="box" onclick="showImage('nv14.png')">佞</div>
+                <div class="box" onclick="showImage('nv9.png')">嫌</div>
+                <div class="box" onclick="showImage('nv10.png')">婊</div>
+                <div class="box" onclick="showImage('nv11.png')">嫉</div>
+                <div class="box" onclick="showImage('nv12.png')">嫖</div>
+                <div class="box" onclick="showImage('nv15.png')">婪</div>
+            </div>
+            <div class="box right-grid" id="image-container"></div>
+        </section>
+        <footer>
+            <img src="womenbody 2.png" alt="Footer Image">
+        </footer>
+    </div>
+
+    <script>
+        function showImage(imageSrc) {
+            var imageContainer = document.getElementById('image-container');
+            imageContainer.innerHTML = '<img src="' + imageSrc + '" alt="Character Image">';
+        }
+    </script>
 
 
  
